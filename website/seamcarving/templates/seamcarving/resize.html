@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <h1>Resize without Mask</h1>
+
+    <h3>Example 1: Skyline</h3>
+    <p>Input: 1280*607</p>
+    <img src="{% static 'seamcarving/results/skyline.png' %}">
+    <p>Reduced: 1280*450</p>
+    <img src="{% static 'seamcarving/results/skyline_shrink.png' %}">
+    <p>Expanded: 1280*800</p>
+    <img src="{% static 'seamcarving/results/skyline_enlarge.png' %}">
+
+    <h3>Example 2: Flower</h3>
+    <p>Input: 800*533</p>
+    <img src="{% static 'seamcarving/results/flower.png' %}">
+    <p>Reduced: 600*500</p>
+    <img src="{% static 'seamcarving/results/flower_resize.png' %}">
+
+    <h3>Example 3: Bench</h3>
+    <p>Input: 512*342</p>
+    <img src="{% static 'seamcarving/results/bench3.png' %}">
+    <p>Reduced: 256*342</p>
+    <img src="{% static 'seamcarving/results/bench3_resize.png' %}">
+    <p>Reduced: 256*342</p>
+    <img src="{% static 'seamcarving/results/bench3_improved.png' %}">
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <h1>Video Retargeting</h1>
+    <p>Note: If your browser can't play some video, you can copy the video address and download it manually.</p>
+    <h3>Example 1: Golf</h3>
+    <p>Input: 320*240</p>
+    <video controls="controls" width="320" height="240" 
+    name="Original video" src="{% static 'seamcarving/results/golf.mp4' %}"></video>
+    <p>Resized by combining resized frames: 240*240</p>
+    <video controls="controls" width="240" height="240" 
+    name="Resized by combining resized frames" src="{% static 'seamcarving/results/golf_combined.mp4' %}"></video>
+    <p>Resized by improved seam carving: 300*240</p>
+    <video controls="controls" width="300" height="240" 
+    name="Resized by improved seam carving" src="{% static 'seamcarving/results/golf_retarget_all.mp4' %}"></video>
+
+</body>
+
+</html>
